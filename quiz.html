@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Soulayma Hrira</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  
+</head>
+
+<body class="index-page">
+  <!-- Header Section -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center"> <!--classe boot ycentry les element verticale et les laigner -->
+        <h1 class="sitename">PortFolio</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="./index.html" >Accueil</a></li>
+            <li><a href="/parcours.html">Parcours</a></li>
+            <li><a href="./compétences.html">Compétences</a></li>
+            <li><a href="./stages.html">Stages</a></li>
+            <li><a href="./manifestations.html">Manifestations</a></li>
+            <li><a href="./matiers.html">Matières</a></li>
+            <li><a href="./passions.html">Passions</a></li>
+            <li><a href="#" class="active">Quiz</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./temoignage.html">Témoignage</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <!-- Main Quiz Content -->
+  <main>
+    <div class="quiz-container container mt-5">
+
+      <h1>Quiz JavaScript</h1>
+
+      <form id="quizForm">  <!-- formulaire con les questions -->
+        <!-- Question 1 -->
+        <div class="question">
+          <p>1. Quelle est la méthode pour afficher un message dans la console ?</p>
+          <input type="radio" name="q1" value="console.log"> console.log<br>
+          <input type="radio" name="q1" value="print()"> print()<br>
+          <input type="radio" name="q1" value="alert()"> alert()<br>
+          <div class="correction" id="correction-q1"></div> <!-- Section vide pour afficher les corrections après validation. -->
+        </div>
+        
+
+        <!-- Question 2 -->
+        <div class="question">
+          <p>2. Comment définir une variable en JavaScript ?</p>
+          <input type="radio" name="q2" value="let"> let<br>
+          <input type="radio" name="q2" value="const"> const<br>
+          <input type="radio" name="q2" value="var"> var<br>
+          <div class="correction" id="correction-q2"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+          <p>3. Quelle méthode est utilisée pour ajouter un élément à un tableau ?</p>
+          <input type="radio" name="q3" value="push()"> push()<br>
+          <input type="radio" name="q3" value="pop()"> pop()<br>
+          <input type="radio" name="q3" value="shift()"> shift()<br>
+          <div class="correction" id="correction-q3"></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+          <p>4. Quelle méthode permet de convertir une chaîne de caractères en nombre ?</p>
+          <input type="radio" name="q4" value="parseInt()"> parseInt()<br>
+          <input type="radio" name="q4" value="toNumber()"> toNumber()<br>
+          <input type="radio" name="q4" value="Number()"> Number()<br>
+          <div class="correction" id="correction-q4"></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+          <p>5. Quelle est la syntaxe correcte pour créer une fonction en JavaScript ?</p>
+          <input type="radio" name="q5" value="function myFunction()"> function myFunction()<br>
+          <input type="radio" name="q5" value="function: myFunction()"> function: myFunction()<br>
+          <input type="radio" name="q5" value="myFunction() function"> myFunction() function<br>
+          <div class="correction" id="correction-q5"></div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+          <p>6. Quel mot-clé est utilisé pour déclarer une constante ?</p>
+          <input type="radio" name="q6" value="const"> const<br>
+          <input type="radio" name="q6" value="let"> let<br>
+          <input type="radio" name="q6" value="final"> final<br>
+          <div class="correction" id="correction-q6"></div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+          <p>7. Comment pouvez-vous vérifier si une variable est définie ?</p>
+          <input type="radio" name="q7" value="typeof variable !== 'undefined'"> typeof variable !== 'undefined'<br>
+          <input type="radio" name="q7" value="variable == undefined"> variable == undefined<br>
+          <input type="radio" name="q7" value="check(variable)"> check(variable)<br>
+          <div class="correction" id="correction-q7"></div>
+        </div>
+
+        <!-- Bouton de validation Bouton qui appelle la fonction JavaScript corrigerQuiz() lorsqu'il est cliqué. -->
+        <button type="button" class="btn btn-primary mt-3" onclick="corrigerQuiz()">Valider</button>
+      </form>
+
+      <!-- Score final -->
+      <div class="mt-4" id="score"></div>
+    </div>
+  </main>
+
+  
+
+  <!-- Importer le script JavaScript -->
+  <script src="assets/js/quiz.js"></script>
+</body>
+
+</html>

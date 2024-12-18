@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Soulayma Hrira</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">PortFolio</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./parcours.html">Parcours</a></li>
+            <li><a href="./compétences.html">Compétences</a></li>
+            <li><a href="./stages.html">Stages</a></li>
+            <li><a href="./manifestations.html">Manifestations</a></li>
+            <li><a href="./matiers.html">Matières</a></li>
+            <li><a href="./passions.html">Passions</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
+            <li><a href="./temoignage.html">Témoignage</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Vous pouvez me contacter via le formulaire ci-dessous pour toute information ou question.</p>
+      </div>
+      <script src="./assets/js/script.js"></script>
+ 
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Formulaire de contact -->
+        <form action="#" method="post" class="email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <!-- Champ pour le nom -->
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Votre Nom" required>
+            </div>
+
+            <!-- Champ pour l'email -->
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Votre Email" required>
+            </div>
+
+            <!-- Champ pour le sujet -->
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Sujet" required>
+            </div>
+
+            <!-- Champ pour le message -->
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Votre Message" required></textarea>
+            </div>
+
+            <!-- Bouton envoyer -->
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="container mt-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-center">
+          <h3>Retrouvez-moi sur</h3>
+          <div class="d-flex justify-content-center gap-4">
+            <div class="d-flex justify-content-center align-items-center social-icons gap-4">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/soulayma-hrira-161a97272" target="_blank">
+                <i class="bi bi-linkedin" style="font-size: 2rem; color: #0077b5;"></i>
+              </a>
+              
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="bi bi-instagram" style="font-size: 2rem; color: #e4405f;"></i>
+              </a>
+              
+              <!-- Email -->
+              <a href="mailto:soulayma.hrira@example.com">
+                <i class="bi bi-envelope" style="font-size: 2rem; color: #555;"></i>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>&copy; 2024 Soulayma Hrira. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/contact.js"></script>
+
+</body>
+</html>
